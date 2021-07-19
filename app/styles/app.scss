@@ -1,0 +1,36 @@
+body{
+    background-color: white;
+}
+
+#navbarId{
+    position: absolute;
+    top:50;
+     left:0;
+    height:55px;
+    z-index:1000;
+}
+#login{
+    position:relative;
+    top:100px;
+
+}
+
+#home{
+    position:relative;
+    top:100px;
+
+}
+
+.btn-default {
+    background: #D9853C;
+    color: #FFFFFF;
+    border-color:#D9853C;
+}
+
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+.ember-modal-dialog{
+    width:400px;
+    height:200px;
+}

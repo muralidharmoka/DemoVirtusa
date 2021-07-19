@@ -1,0 +1,32 @@
+<div id="login">
+    <div class="container">
+        <div class="col-md-4  col-md-offset-4">
+            <div class="panel panel-info">
+                <div class="panel-heading"> <strong class="">Login</strong> </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Username</label>
+                            <div class="col-sm-9">
+                                {{input value=username class="form-control" size="20" placeholder="username" type="text"}}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-9">
+                                {{input value=password class="form-control" placeholder="password"  type="password"}}
+                            </div>
+                        </div>
+                        <div class="form-group"></div>
+                        <div class="form-group last">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit"   {{action "login"}} class="btn btn-default btn-sm">Sign in</button>
+                                <button type="reset" class="btn btn-default btn-sm" {{action "loginfieldReset"}}>Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

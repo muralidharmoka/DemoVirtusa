@@ -1,0 +1,11 @@
+<div id="login">
+    <div class="container">
+         {{#each model as |post|}}
+            <div class="panel panel-success">
+                <div class="panel-heading"><h4>{{post.title}}</h4></div>
+                <div class="panel-body">{{post.body}}</div>
+                <div class="panel-footer">By:{{post.userId.name}}</div>
+            </div>
+         {{/each}}
+    </div>
+</div>
